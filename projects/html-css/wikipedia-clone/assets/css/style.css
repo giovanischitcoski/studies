@@ -1,10 +1,8 @@
-/* Reset básico e estilos globais */
 body, html {
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
 
 ul {
     list-style: none;
@@ -16,34 +14,33 @@ a {
     text-decoration: none;
 }
 
-/* Estilos para o logo */
 .logo {
     display: flex;
-    justify-content: flex-start; /* Alinhar à esquerda */
-    align-items: center; /* Centralizar verticalmente */
+    justify-content: flex-start;
+    align-items: center;
     padding: 15px;
 }
 
-/* Estilos para a barra de pesquisa */
 .search {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 15px;
-    margin-top: -50px; /* Ajuste de posicionamento */
+    margin-top: -50px;
 }
 
 .search input {
     padding: 8px;
-    width: 250px; /* Largura da barra de pesquisa */
+    width: 250px;
     border: solid 1px #cdcdcd;
     border-radius: 5px;
     font-size: 16px;
+    max-width: 100%;
 }
 
 .search button {
     padding: 8px 12px;
-    margin-left: -2px; /* Ajuste para alinhar com o input */
+    margin-left: -2px;
     background-color: #007bff;
     color: white;
     border: none;
@@ -51,18 +48,16 @@ a {
     cursor: pointer;
 }
 
-/* Estilos para o sidebar */
 .sidebar {
     width: 1500px;
     background-color: #f4f4f4;
     padding: 20px;
-    position: sticky; /* Fixa a sidebar */
-    top: 0; /* Alinha ao topo */
-    height: 100vh; /* Altura total da viewport */
-    overflow-y: auto; /* Adiciona scroll se necessário */
-    border: solid 1px #cdcdcd; /* Borda à direita */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
-
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+    border: solid 1px #cdcdcd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .sidebar ul {
@@ -84,16 +79,14 @@ a {
     color: #007bff;
 }
 
-/* Estilos para o conteúdo principal */
 .content {
     display: flex;
-    gap: 20px; /* Espaço entre o conteúdo e o sidebar/infobox */
+    gap: 20px;
     padding: 20px;
-    max-width: 1200px; /* Limita a largura máxima do container */
-    margin: 0 auto; /* Centraliza o container na página */
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-/* Estilos para as seções */
 section {
     margin-bottom: 50px;
     padding: 20px;
@@ -102,18 +95,16 @@ section {
     border-radius: 5px;
 }
 
-/* Estilos para a barra de navegação */
 .bar {
     display: flex;
     justify-content: center;
-    align-items: center;
     background-color: rgba(236, 236, 236, 0.61);
     margin: 0;
 }
 
 .bar table {
-    width: 100%;
-    border-collapse: collapse; /* Remove espaçamento entre as células */
+    width: auto;
+    border-collapse: collapse;
     background-color: rgba(236, 236, 236, 0.61);
 }
 
@@ -123,112 +114,92 @@ section {
 }
 
 .bar a {
-    text-decoration: none; /* Remove o sublinhado */
-    color: #333; /* Cor padrão do link */
+    text-decoration: none;
+    color: #333;
     font-size: 16px;
-    transition: color 0.3s ease, background-color 0.3s ease; /* Transição suave */
+    transition: color 0.3s ease, background-color 0.3s ease;
 }
 
 .bar a:hover {
-    color: white; /* Cor do texto no hover */
-    background-color: #007bff; /* Cor de fundo no hover */
-    border-radius: 5px; /* Borda arredondada no hover */
-    padding: 5px; /* Espaçamento adicional no hover */
+    color: white;
+    background-color: #007bff;
+    border-radius: 5px;
+    padding: 5px;
 }
 
 .bar td a {
     display: inline-block;
     padding: 8px 16px;
-    border-radius: 5px; /* Borda arredondada nas células */
+    border-radius: 5px;
 }
 
 .bar td:hover a {
-    background-color: #0056b3; /* Cor de fundo da célula no hover */
-    color: white; /* Cor do texto no hover */
+    background-color: #0056b3;
+    color: white;
 }
 
-/* Estilos para o footer */
 .footer {
     min-height: 100px;
     border-top: solid 1px #cdcdcd;
-    background-color: #f8f9fa; /* Cor de fundo */
-    border-top: 1px solid #ddd; /* Borda superior */
-    padding: 20px 0; /* Espaçamento interno */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #333; /* Cor do texto */
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    color: #333;
 }
 
-/* Container do conteúdo do footer */
 .footer-content {
     display: flex;
-    justify-content: space-around; /* Distribui as seções igualmente */
-    flex-wrap: wrap; /* Permite que as seções quebrem para a próxima linha */
-    max-width: 1200px; /* Largura máxima do conteúdo */
-    margin: 0 auto; /* Centraliza o conteúdo */
-    padding: 0 20px; /* Espaçamento lateral */
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-/* Estilos para cada seção do footer */
 .footer-section {
-    flex: 1; /* Cada seção ocupa espaço igual */
-    min-width: 200px; /* Largura mínima para evitar quebras indesejadas */
-    margin: 10px 0; /* Espaçamento entre as seções */
+    flex: 1;
+    min-width: 200px;
+    margin: 10px 0;
 }
 
 .footer-section h3 {
     font-size: 18px;
-    margin-bottom: 15px; /* Espaçamento abaixo do título */
-    color: #007bff; /* Cor do título */
+    margin-bottom: 15px;
+    color: #007bff;
 }
 
 .footer-section ul {
-    list-style: none; /* Remove marcadores de lista */
     padding: 0;
     margin: 0;
 }
 
 .footer-section ul li {
-    margin: 8px 0; /* Espaçamento entre os itens da lista */
+    margin: 8px 0;
 }
 
 .footer-section ul li a {
-    text-decoration: none; /* Remove sublinhado dos links */
-    color: #333; /* Cor dos links */
+    text-decoration: none;
+    color: #333;
     font-size: 14px;
-    transition: color 0.3s ease; /* Transição suave ao passar o mouse */
 }
 
 .footer-section ul li a:hover {
-    color: #007bff; /* Cor do link ao passar o mouse */
+    color: #007bff;
 }
 
-/* Estilos para a parte inferior do footer */
 .footer-bottom {
-    text-align: center; /* Centraliza o texto */
-    margin-top: 20px; /* Espaçamento acima do rodapé inferior */
-    padding-top: 10px; /* Espaçamento interno */
-    border-top: 1px solid #ddd; /* Borda superior */
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
     font-size: 14px;
-    color: #666; /* Cor do texto */
+    color: #666;
 }
 
-.footer-bottom a {
-    color: #007bff; /* Cor dos links */
-    text-decoration: none; /* Remove sublinhado */
-}
-
-.footer-bottom a:hover {
-    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
-}
-
-
-/* Estilos para âncoras */
 .anchors {
     border-left: solid 1px #cdcdcd;
     padding-left: 15px;
 }
 
-/* Estilos para a infobox */
 .infobox {
     width: 300px;
     background-color: #f9f9f9;
@@ -236,7 +207,7 @@ section {
     border-radius: 5px;
     padding: 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    flex: 0 0 300px; /* Largura fixa */
+    flex: 0 0 300px;
 }
 
 .infobox table {
@@ -266,128 +237,113 @@ section {
     max-width: 100%;
     height: auto;
     display: block;
-    margin: 10px 0;
+    margin: 10px auto;
     border-radius: 5px;
 }
 
-.infobox ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.infobox ul li {
-    margin-bottom: 5px;
-}
-
-/* Estilos para imagens */
 figure {
     text-align: center;
-    margin: 0;
-    background-color: #cdcdcd;
+    margin: 1rem auto;
+    background-color: #f8f8f8;
     padding: 1rem;
-    width: 100%;
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+figure img {
+    max-width: 100%;
     height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 4px;
 }
 
-/* Responsividade para telas menores */
+figcaption {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #666;
+}
 
-@media (max-width: 1200px) {
+@media screen and (max-width: 768px) {
     .content {
-        flex-direction: column; /* Coloca o sidebar e o main em coluna */
-        gap: 10px; /* Reduz o espaço entre os elementos */
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
     }
 
-    .sidebar {
-        width: 100%; /* Ocupa toda a largura da tela */
-        height: auto; /* Altura automática */
-        position: static; /* Remove a posição sticky */
-        padding: 10px; /* Reduz o padding */
+    .header{
+        align-items: center;
+        text-align: center;
+
     }
 
-    .anchors {
-        width: 100%; /* Ocupa toda a largura da tela */
-        padding: 10px; /* Reduz o padding */
-    }
-
-    .infobox {
-        width: 100%; /* Ocupa toda a largura da tela */
-        margin-top: 20px; /* Adiciona espaço acima */
-    }
-
-    .bar td {
-        padding: 5px; /* Reduz o padding das células da tabela */
-    }
-
-    .bar a {
-        font-size: 14px; /* Reduz o tamanho da fonte */
-    }
-}
-
-@media (max-width: 768px) {
     .logo {
-        justify-content: center; /* Centraliza o logo */
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .search button {
+        display: none;
+      }
+      
+      .search input {
+        border-radius: 5px !important; 
+        width: 100% !important; 
+      }
+    
+    .sidebar  {
+        width: 90%;
+        position: static;
+        height: auto;
+    }
+    
+    .infobox {
+        width: 100%;
+        margin-bottom: 20px;
+        
+        
     }
 
     .search {
-        margin-top: 0; /* Remove o ajuste de posicionamento */
+        margin-top: 0;
     }
-
+    
     .search input {
-        width: 70%; /* Reduz a largura da barra de pesquisa */
+        width: 70%;
     }
-
-    .search button {
-        width: 25%; /* Ajusta o botão de pesquisa */
+    
+    .bar {
+        overflow-x: hidden;
     }
-
+    
     .bar table {
-        display: block; /* Transforma a tabela em blocos */
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
-
+    
+    .bar tr {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
     .bar td {
-        display: block; /* Coloca cada célula em uma linha */
-        text-align: left; /* Alinha o texto à esquerda */
-        padding: 8px 0; /* Ajusta o padding */
+        padding: 8px;
     }
-
-    .bar a {
-        display: block; /* Faz os links ocuparem toda a largura */
-        padding: 8px; /* Adiciona padding */
+    
+    figure {
+        padding: 0.5rem;
+        margin: 0.5rem 0;
     }
 
     .footer-content {
-        flex-direction: column; /* Coloca as seções do footer em coluna */
-        text-align: center; /* Centraliza o texto */
+        flex-direction: column;
+        align-items: center;
     }
-
     .footer-section {
-        margin-bottom: 20px; /* Adiciona espaço entre as seções */
-    }
-}
-
-@media (max-width: 480px) {
-    .search input {
-        width: 60%; /* Reduz ainda mais a largura da barra de pesquisa */
-    }
-
-    .search button {
-        width: 30%; /* Ajusta o botão de pesquisa */
-    }
-
-    .sidebar ul li a {
-        font-size: 16px; /* Reduz o tamanho da fonte dos links do sidebar */
-    }
-
-    .infobox th, .infobox td {
-        padding: 5px; /* Reduz o padding das células da infobox */
-    }
-
-    .infobox img {
-        margin: 5px 0; /* Reduz o espaço ao redor das imagens */
-    }
-
-    .footer-bottom {
-        font-size: 12px; /* Reduz o tamanho da fonte do rodapé */
+        min-width: 100%;
+        text-align: center;
     }
 }
